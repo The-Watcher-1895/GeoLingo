@@ -1,26 +1,22 @@
 # GeoQuery
 
-A smart system that automatically identifies and maps place names from natural language input, handling spelling variations and contextual understanding of geographical references.
+A smart system that automatically identifies and maps place names (such as countries, cities, and states) from natural language input to a set of canonical names provided in tables. The system will handle spelling variations and errors, performing fuzzy matching to correctly identify and match place names. The system would distinguish between place names and other terms, such as personal names, based on context. For example, in the query "Sagar lives in Mumbai," only "Mumbai" should be identified as a place. The system will include features like search history, login, and a user-friendly UI, with a Node.js and Flask backend, and a React.js frontend. It will work with both declarative and imperative sentences, and accurately process geospatial references, e.g., "Show me a graph of rainfall for Chennai for the month of October."
 
 ## Project Demo
-<div align="center">
-  <video width="640" height="360" controls>
-    <source src="./GeoQuery-Working.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+> <video src="https://private-user-images.githubusercontent.com/194898697/404524973-bd4d607b-568b-4d5e-bff3-65061a735e67.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzcxOTI5NDgsIm5iZiI6MTczNzE5MjY0OCwicGF0aCI6Ii8xOTQ4OTg2OTcvNDA0NTI0OTczLWJkNGQ2MDdiLTU2OGItNGQ1ZS1iZmYzLTY1MDYxYTczNWU2Ny5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDExOFQwOTMwNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NmEwMDZiOThmN2QyMDJhNTNkYTRiNzQwM2U2NTVmNGRmOWE3MWNjMzIxOGFiZTdkNWRlOGY4MDYxNzUyMjBjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-s10I-8vLEqdWX5mfKRz3B-827JcB_TPgeEtvkG0mVo" controls="controls" style="max-width: 730px;">
+> </video>
 
 ## Project Structure
 The project consists of three main components:
-- Frontend (React.js)
-- Backend (Node.js)
-- Flask Application (Python)
+> - Frontend (React.js)
+> - Backend (Node.js)
+> - Flask Application (Python)
 
 ## Prerequisites
-- Node.js (v14 or higher)
-- Python 3.8+
-- npm or yarn
-- Git
+> - Node.js (v14 or higher)
+> - Python 3.8+
+> - npm or yarn
+> - Git
 
 ## Installation Steps
 
@@ -32,10 +28,10 @@ cd GeoQuery
 ```
 
 ### 2. Download and Place Models
-1. Download the models from [Google Drive](https://drive.google.com/drive/folders/1EvgDO6aA1YpB9ekQVjFNaarKFIv3IuRa?usp=drive_link)
-2. Place the downloaded models in their respective folders:
-   - Place `final-model.pt` in the root directory
-   - Place `lstm.pt` in the root directory
+> 1. Download the models from [Google Drive](https://drive.google.com/drive/folders/1EvgDO6aA1YpB9ekQVjFNaarKFIv3IuRa?usp=drive_link)
+> 2. Place the downloaded models in their respective folders:
+  >> - Place `final-model.pt` in the root directory
+  >> - Place `lstm.pt` in the root directory
 
 ### 3. Frontend Setup (GeoQuery-frontend)
 ```bash
@@ -78,43 +74,43 @@ FLASK_ENV=development
 
 ## Running the Application
 
-1. Start the Frontend:
+> 1. Start the Frontend:
 ```bash
 cd GeoQuery-frontend
 npm run dev
 ```
 
-2. Start the Backend:
+> 2. Start the Backend:
 ```bash
 cd GeoQuery-backend
 npm run start
 ```
 
-3. Start the Flask Application:
+> 3. Start the Flask Application:
 ```bash
 cd GeoQuery-flask
 python app.py
 ```
 
 The application should now be running at:
-- Frontend: http://localhost:5173
-- Backend: http://localhost:3000
-- Flask App: http://localhost:5000
+> - Frontend: http://localhost:5173
+> - Backend: http://localhost:3000
+> - Flask App: http://localhost:5000
 
 
 ## Features
-- Automatic identification of place names
-- Fuzzy matching for spelling variations
-- Context-aware geographical reference processing
-- Search history
-- User authentication
-- Interactive UI
-- Support for both declarative and imperative sentences
-- Geospatial data visualization
-- Video preview functionality
+> - Automatic identification of place names
+> - Fuzzy matching for spelling variations
+> - Context-aware geographical reference processing
+> - Search history
+> - User authentication
+> - Interactive UI
+> - Support for both declarative and imperative sentences
+> - Geospatial data visualization
+> - Video preview functionality
 
 ## Tech Stack
-- Frontend: React.js, Vite, TailwindCSS
-- Backend: Node.js, Express
-- ML Service: Flask, Python
-- Models: PyTorch
+> - Frontend: React.js, Vite, TailwindCSS
+> - Backend: Node.js, Express
+> - ML Service: Flask, Python
+> - Models: PyTorch
