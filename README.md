@@ -5,7 +5,76 @@
 # National Institute of Technology Durgapur
 
 
-# GeoQuery
+## Domain of the Project:
+GeoQuery is a sophisticated Natural Language Processing (NLP) and Geographic Information System (GIS) project that focuses on intelligent place name recognition and mapping. It operates in the domain of geospatial data processing and natural language understanding, specifically targeting the challenges of location entity recognition and normalization.
+
+## Idea:
+The core idea is to create a smart system that can:
+- Automatically identify and map place names from natural language input to canonical names
+- Handle spelling variations and errors through fuzzy matching
+- Distinguish between place names and other terms using contextual analysis
+- Process both declarative and imperative geographical queries
+- Provide visualization of geospatial data
+- Offer a user-friendly interface with features like search history and authentication
+
+## Achievements Thus Far:
+1. Successfully implemented a three-tier architecture:
+   - React.js frontend with TailwindCSS for modern UI
+   - Node.js/Express backend for business logic
+   - Flask-based ML service for geographical entity processing
+
+2. Developed key functionalities:
+   - Place name identification system
+   - Fuzzy matching algorithm for spelling variations
+   - Context-aware geographical reference processing
+   - User authentication system
+   - Search history tracking
+   - Geospatial data visualization
+   - Video preview capability
+
+## Code Execution Instructions:
+1. System Requirements:
+   - Node.js v14+
+   - Python 3.8+
+   - npm/yarn
+   - Git
+
+2. Setup Process:
+   ```bash
+   # Clone repository
+   git clone https://github.com/The-Watcher-1895/GeoQuery.git
+   cd GeoQuery
+
+   # Download and place ML models
+   # Place final-model.pt and lstm.pt in root directory
+
+   # Frontend setup
+   cd GeoQuery-frontend
+   npm install
+   npm run dev
+
+   # Backend setup
+   cd GeoQuery-backend
+   npm install
+   npm run start
+
+   # Flask setup
+   cd GeoQuery-flask
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   python app.py
+   ```
+
+3. Access Points:
+   - Frontend: http://localhost:5173
+   - Backend: http://localhost:3000
+   - Flask Service: http://localhost:5000
+
+The system is now operational and ready to process geographical queries and provide intelligent place name recognition services.
+
+# Description
+## GeoQuery
 
 A smart system that automatically identifies and maps place names (such as countries, cities, and states) from natural language input to a set of canonical names provided in tables. The system will handle spelling variations and errors, performing fuzzy matching to correctly identify and match place names. The system would distinguish between place names and other terms, such as personal names, based on context. For example, in the query "Sagar lives in Mumbai," only "Mumbai" should be identified as a place. The system will include features like search history, login, and a user-friendly UI, with a Node.js and Flask backend, and a React.js frontend. It will work with both declarative and imperative sentences, and accurately process geospatial references, e.g., "Show me a graph of rainfall for Chennai for the month of October."
 
