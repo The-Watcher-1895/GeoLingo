@@ -1,3 +1,10 @@
+# Team Panchayat
+# Members:
+> ## Deep Samanta
+> ## Aniket Kumar Gupta
+# National Institute of Technology Durgapur
+
+
 # GeoQuery
 
 A smart system that automatically identifies and maps place names (such as countries, cities, and states) from natural language input to a set of canonical names provided in tables. The system will handle spelling variations and errors, performing fuzzy matching to correctly identify and match place names. The system would distinguish between place names and other terms, such as personal names, based on context. For example, in the query "Sagar lives in Mumbai," only "Mumbai" should be identified as a place. The system will include features like search history, login, and a user-friendly UI, with a Node.js and Flask backend, and a React.js frontend. It will work with both declarative and imperative sentences, and accurately process geospatial references, e.g., "Show me a graph of rainfall for Chennai for the month of October."
